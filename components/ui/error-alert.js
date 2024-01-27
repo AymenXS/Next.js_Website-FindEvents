@@ -1,7 +1,7 @@
 import styles from './error-alert.module.css';
 
-function ErrorAlert(props) {
-  return <div className={styles.alert}>{props.children}</div>;
-}
+const ErrorAlert = ({ children }) => {
+  return <div className={styles.alert}>{children}</div>;
+};
 
 export default ErrorAlert;
