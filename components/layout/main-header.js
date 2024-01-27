@@ -1,7 +1,8 @@
 import Link from 'next/link';
+
 import styles from './main-header.module.css';
 
-const MainHeader = () => {
+function MainHeader() {
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
@@ -16,5 +17,6 @@ const MainHeader = () => {
       </nav>
     </header>
   );
-};
+}
+
 export default MainHeader;

@@ -1,7 +1,9 @@
 import Button from '../ui/button';
 import styles from './results-title.module.css';
 
-const ResultsTitle = ({ date }) => {
+function ResultsTitle(props) {
+  const { date } = props;
+
   const humanReadableDate = new Date(date).toLocaleDateString('en-US', {
     month: 'long',
     year: 'numeric',
@@ -13,6 +15,6 @@ const ResultsTitle = ({ date }) => {
       <Button link="/events">Show all events</Button>
     </section>
   );
-};
+}
 
 export default ResultsTitle;
